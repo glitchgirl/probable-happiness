@@ -5,7 +5,7 @@ class LinkedListNode {
         this.next = null;
     }
 }
-/*
+/* this is commented out so the longer example works, uncomment for node example
 const head = new LinkedListNode(12);
 
 // add a second node
