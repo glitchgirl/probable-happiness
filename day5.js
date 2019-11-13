@@ -25,11 +25,14 @@ function listGroceries(grocArray) {
   }
 }
 
+
 /* add below includes method*/
 
 var groceryList = groceryItems.find(a => a.includes('y'));
 
-console.log(groceryList);
+console.log(groceryItems);
+groceryItems.sort();
+console.log(groceryItems);
 
 listGroceries(groceryItems);
 listGroceries(name);
