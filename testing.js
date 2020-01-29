@@ -52,3 +52,22 @@ if( age > 21 && haveId && haveDriver){
 } else {
     console.log("no");
 }
+
+// video games
+var likeGames = true;
+var haveFriends = false;
+var irl = true;
+
+if(!likeGames){
+    if(haveFriends){
+        if(irl){
+            console.log("wii");
+        } else {
+            console.log("xbox");
+        }
+    } else {
+        console.log("playstation");
+    }
+} else {
+    console.log("buy a pc");
+}
