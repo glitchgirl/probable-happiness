@@ -71,3 +71,36 @@ if(!likeGames){
 } else {
     console.log("buy a pc");
 }
+
+// going to lunch
+var haveMoney;
+var fastFood;
+var homeMade;
+var type;
+var restaurant;
+
+haveMoney = true;
+fastFood = false;
+homeMade = "no";
+type = "burger";
+restaurant = "deli";
+
+if(haveMoney){
+if(fastFood){
+    if(type === "burger"){
+        console.log("5guys");
+    } else if(type === "wings"){
+        console.log("ATown");
+    
+    } else if(type === "salad"){
+        console.log("TopDog");
+    }
+}
+
+} else if (homeMade === "yes"){
+    console.log("goHome");
+} else if (homeMade === "don't like it"){
+    console.log("ask a friend");
+} else {
+    console.log("starve");
+}
