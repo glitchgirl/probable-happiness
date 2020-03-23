@@ -8,6 +8,8 @@ const grade = "htmlquiz%90, designquiz%80";
 const quizArr = grade.split(",");
 //notice that split makes the string into an array. this means that we cant just use split again because spilt is a string method. so we gotta get creative.
 
-//we can use any kind of for/while loop here, but a forEach makes the most since becuase it is an array. 
-quizArr.forEach(quiz => quiz.split("%")); 
-//now we have an array of arrays, which we can access and compare each part to either the key or the value of our object
+//we can use any kind of for/while loop here, i just did a for loop
+for(i =0; i < quizArr.length; i++){
+    quizArr[i] = quizArr[i].split("%");
+}
+//now we have an array of arrays, which we can access and compare each part to either the key or the value of our object. You can also do the trim inside the for loop, if you don't want spaces. 
