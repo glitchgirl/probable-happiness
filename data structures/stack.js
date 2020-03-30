@@ -26,3 +26,10 @@ Stack.prototype.pop = function() {
 Stack.prototype.size = function() {
     return this.count;
 }
+
+var stackable = new Stack; 
+
+stackable.push(10);
+stackable.push(15);
+console.log(stackable);
+console.log(stackable.size()); 
