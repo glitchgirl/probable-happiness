@@ -35,4 +35,3 @@ const z = new Queue();
 z.add(4);
 console.log(z);
 console.log(`${z.size()}`);
-console.log()

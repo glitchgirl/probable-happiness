@@ -6,7 +6,7 @@ function bubble_Sort(a)
     do {
         swapp = false;
         for (var i=0; i < n; i++){
-            if (x[i] < x[i+1]){
+            if (x[i] > x[i+1]){
                 var temp = x[i];
                 x[i] = x[i+1];
                 x[i+1] = temp;

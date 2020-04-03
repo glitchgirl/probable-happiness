@@ -29,6 +29,7 @@ function merge (left, right) {
             result.push(right[indexRight])
             indexRight++
         }
+        console.log( `partial ${result}`);
     }
 
     return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight))
