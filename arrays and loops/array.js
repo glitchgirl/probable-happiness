@@ -71,3 +71,32 @@ var numbers = [12,60,88,100,33];
 var end = numbers.slice(2,numbers.length); 
 console.log(numbers , end);
 
+// 2d (or more) arrays
+
+var bigArr = [
+    [3,4],
+    [6,7],
+    [1,2]
+];
+
+//accessing the arrays
+console.log(bigArr);
+//get a point from the array
+console.log(bigArr[0]);
+//get one piece of a pair from the array
+console.log(bigArr[0][1]);
+
+// what about seeing all the elements in the array
+// each pair
+for(i = 0; i < bigArr.length; i++){
+    console.log(bigArr[i]);
+}
+// each number
+for(j = 0; j < bigArr.length; j++){
+    for(k = 0; k < bigArr.length-1; k++){
+        //bigArr[j][k] = [0,bigArr[j][k]];
+        console.log(bigArr[j][k]);
+    }
+}
+// be aware about the size of the arrays inside the bigger array
+// be aware about the order of your pair inside the inner most loop
