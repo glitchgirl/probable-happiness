@@ -160,3 +160,7 @@ let list = new DoublyLinkedList;
 show when shows undefined vs null item
 show when returning boolean vs actually doing it 
 */
+
+list.push(5);
+list.push(10);
+console.log(list);

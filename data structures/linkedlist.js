@@ -5,23 +5,7 @@ class LinkedListNode {
         this.next = null;
     }
 }
-/* this is commented out so the longer example works, uncomment for node example
-const head = new LinkedListNode(12);
-
-// add a second node
-head.next = new LinkedListNode(99);
-
-// add a third node
-head.next.next = new LinkedListNode(37);
-
-let current = head;
-
-while (current !== null) {
-    console.log(current.data);
-    current = current.next;
-}
-*/
-//symbols
+//symbols - weird way of protecting variable access
 const head = Symbol("head");
 
 class LinkedList {
@@ -160,7 +144,7 @@ for (const color of list) {
 console.log(list.remove(1));    // "orange"
     
 // get the new first item in the list
-console.log(list.get(1));       // "yellow"
+console.log(list.get(0));       // "yellow"
 
 // convert to an array
 const array1 = [...list.values()];
